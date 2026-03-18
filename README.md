@@ -75,7 +75,7 @@ titanic-survival-prediction/
 ├── confusion_matrix.png      # Model evaluation
 ├── feature_importance.png    # What factors mattered most
 └── data/
-    └── Titanic-Dataset.csv
+    └── Titanic-Dataset.csv   # Download separately (see How to Run)
 ```
 
 ---
@@ -94,12 +94,36 @@ titanic-survival-prediction/
 
 ## 🚀 How to Run
 
+**1. Clone the repository**
 ```bash
 git clone https://github.com/subham23s/titanic-survival-prediction.git
 cd titanic-survival-prediction
+```
+
+**2. Download the dataset**
+
+> Download `Titanic-Dataset.csv` from [Kaggle](https://www.kaggle.com/datasets/yasserh/titanic-dataset) and place it inside a `data/` folder:
+
+```
+titanic-survival-prediction/
+└── data/
+    └── Titanic-Dataset.csv
+```
+
+**3. Create and activate virtual environment**
+```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac/Linux
+```
+
+**4. Install dependencies**
+```bash
 pip install -r requirements.txt
+```
+
+**5. Run the project**
+```bash
 python titanic.py
 ```
 
@@ -120,7 +144,6 @@ python titanic.py
 **Subham Mishra**
 BTech 2nd Year | CSE (AI/ML)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/subhammishra23/)
-
 
 ---
 
